@@ -14,12 +14,15 @@ A Meteor Client addon for Minecraft 1.21.11.
 - More coming soon...
 
 ## Installation
-1. Build the addon with `./gradlew build`
-2. Find the JAR in `build/libs`
-3. Put it into `.minecraft/mods`
+1. Install Meteor Client (required)
+2. Download the latest release from the Releases page
+   - OR build the addon yourself with `./gradlew build`
+3. If you built it yourself, find the JAR in `build/libs`
+4. Put the JAR into `.minecraft/mods`
 
-## Disclaimer
-This project is fully AI‑coded and not meant to be taken too seriously.
+## Disclaimers
+- This project is fully AI‑coded and not meant to be taken too seriously.
+- I update this project occasionally, whenever I feel like it.
 
 ## Author
 volv0w
