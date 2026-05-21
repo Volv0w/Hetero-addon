@@ -24,5 +24,13 @@ A Meteor Client addon for Minecraft 1.21.11.
 - This project is fully AI‑coded and not meant to be taken too seriously.
 - I update this project occasionally, whenever I feel like it.
 
+## Contact
+For questions, feature suggestions, discussions, or finding people to play with,
+feel free to join my Discord server:
+
+**discord.gg/X6A3gWUNxs**
+
+The community mainly speaks Finnish. English is welcome too, but I'm not the best at it.
+
 ## Author
 volv0w
