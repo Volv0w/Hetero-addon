@@ -4,7 +4,7 @@ A Meteor Client addon for Minecraft 1.21.11.
 
 ## Features
 - AutoMLG (Makes perfect water bucket mlg)
-- Party Mode (play music)
+- Party Mode (plays music)
 - InvWalk (allows you to walk while inventory is open)
 - NoBackground (removes GUI background)
 - Custom Hit Sound (plays a custom sound when you hit someone)
