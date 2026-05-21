@@ -15,7 +15,7 @@ public class InvWalk extends Module {
     private void onTick(TickEvent.Pre event) {
         if (mc.player == null || mc.world == null) return;
 
-        // Toimii vain container-GUI:ssa
+        // Works only in container-type GUIs (inventory, chest, crafting table, furnace, etc.)
         if (mc.currentScreen instanceof HandledScreen) {
             mc.options.forwardKey.setPressed(mc.options.forwardKey.isPressed());
             mc.options.backKey.setPressed(mc.options.backKey.isPressed());

@@ -22,23 +22,26 @@ public class Derp extends Module {
 
     private final Setting<Mode> mode = sgGeneral.add(new EnumSetting.Builder<Mode>()
         .name("mode")
-        .description("How derp rotations are applied.")
+        .description("Determines how derp rotations are applied.")
         .defaultValue(Mode.Server_Side_Only)
         .build()
     );
 
     public Derp() {
-        super(AddonTemplate.CATEGORY, "Derp", "Derp head movement with mode selection.");
+        super(AddonTemplate.CATEGORY, "Derp", "Random derp head movement with selectable rotation mode.");
     }
 
     @EventHandler
     private void onTick(TickEvent.Pre event) {
         if (mc.player == null) return;
 
+        // Generate random yaw and pitch
         float yaw = mc.player.getYaw() + random.nextFloat() * 360f - 180f;
         float pitch = random.nextFloat() * 180f - 90f;
 
         switch (mode.get()) {
+
+            // ⭐ Server-side only derp (silent)
             case Server_Side_Only -> {
                 mc.player.networkHandler.sendPacket(
                     new PlayerMoveC2SPacket.LookAndOnGround(
@@ -50,6 +53,7 @@ public class Derp extends Module {
                 );
             }
 
+            // ⭐ Client + server derp (visible locally + sent to server)
             case Client_And_Server -> {
                 mc.player.setYaw(yaw);
                 mc.player.setPitch(pitch);

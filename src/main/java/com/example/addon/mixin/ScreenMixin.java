@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ScreenMixin {
     @Inject(method = "renderBackground", at = @At("HEAD"), cancellable = true)
     private void onRenderBackground(CallbackInfo ci) {
-        // Tämä estää taustan vain jos nappi on päällä
+        // Cancel background rendering only if the module is enabled
         if (Nobackground.INSTANCE != null && Nobackground.INSTANCE.isActive()) {
             ci.cancel();
         }

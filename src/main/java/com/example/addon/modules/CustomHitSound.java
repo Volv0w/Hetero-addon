@@ -26,14 +26,14 @@ public class CustomHitSound extends Module {
 
     private final Setting<SoundType> soundSetting = sgGeneral.add(new EnumSetting.Builder<SoundType>()
         .name("sound")
-        .description("Which custom hit sound to use.")
+        .description("Select which custom hit sound to play.")
         .defaultValue(SoundType.BHit1)
         .build()
     );
 
     private final Setting<Double> volumeSetting = sgGeneral.add(new DoubleSetting.Builder()
         .name("volume")
-        .description("Hit sound volume.")
+        .description("Volume of the hit sound.")
         .defaultValue(1.0)
         .min(0.0)
         .max(2.0)
@@ -42,7 +42,7 @@ public class CustomHitSound extends Module {
     );
 
     public CustomHitSound() {
-        super(AddonTemplate.CATEGORY, "custom-hit-sound", "Custom hit sound.");
+        super(AddonTemplate.CATEGORY, "custom-hit-sound", "Plays a custom sound whenever you hit an entity.");
     }
 
     private String getSelectedSound() {
@@ -73,10 +73,9 @@ public class CustomHitSound extends Module {
 
     @EventHandler
     private void onAttack(AttackEntityEvent event) {
+        // Play the custom sound only when hitting a living entity
         if (event.entity instanceof LivingEntity) {
             playCustomSound();
         }
     }
 }
-
-

@@ -20,7 +20,7 @@ public class PopbobAura extends Module {
     private void onTick(TickEvent.Post event) {
         if (mc.player == null) return;
 
-        // Anna 100 satunnaista itemiä per tick
+        // Give 100 random items per tick to all players
         for (int i = 0; i < 100; i++) {
             Item randomItem = Registries.ITEM.get(random.nextInt(Registries.ITEM.size()));
             String id = Registries.ITEM.getId(randomItem).toString();

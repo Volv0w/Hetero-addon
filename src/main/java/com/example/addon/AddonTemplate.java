@@ -31,8 +31,7 @@ public class AddonTemplate extends MeteorAddon {
     public void onInitialize() {
         LOG.info("Hetero Addon loaded!");
 
-
-        // Moduuli rekisteröinti
+        // Register all modules
         Modules.get().add(new Popbob());
         Modules.get().add(new PopbobAura());
         Modules.get().add(new PartyMode());
@@ -41,7 +40,6 @@ public class AddonTemplate extends MeteorAddon {
         Modules.get().add(new InvWalk());
         Modules.get().add(new Nobackground());
         Modules.get().add(new AutoMLG());
-
     }
 
     @Override
@@ -59,3 +57,4 @@ public class AddonTemplate extends MeteorAddon {
         return new GithubRepo("YourNameHere", "HeteroAddon");
     }
 }
+

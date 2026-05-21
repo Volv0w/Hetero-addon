@@ -36,14 +36,14 @@ public class PartyMode extends Module {
 
     private final Setting<Mode> modeSetting = sgGeneral.add(new EnumSetting.Builder<Mode>()
         .name("mode")
-        .description("Playback mode.")
+        .description("Select playback mode.")
         .defaultValue(Mode.Single)
         .build()
     );
 
     private final Setting<Song> songSetting = sgGeneral.add(new EnumSetting.Builder<Song>()
         .name("song")
-        .description("Which song to play.")
+        .description("Select which song to play.")
         .defaultValue(Song.Titanium)
         .build()
     );
@@ -79,13 +79,14 @@ public class PartyMode extends Module {
     private int playlistIndex = 0;
 
     public PartyMode() {
-        super(AddonTemplate.CATEGORY, "party-mode", "plays music : ).");
+        super(AddonTemplate.CATEGORY, "party-mode", "Plays custom music tracks in single or playlist mode.");
     }
 
     @Override
     public void onActivate() {
         timer = 0;
 
+        // Reset playlist index when playlist mode is enabled
         if (modeSetting.get() == Mode.Playlist) {
             playlistIndex = 0;
             songSetting.set(playlist[0]);
@@ -96,6 +97,7 @@ public class PartyMode extends Module {
 
     @Override
     public void onDeactivate() {
+        // Stop all sounds when module is turned off
         if (mc.player != null) {
             mc.getSoundManager().stopAll();
         }
@@ -107,6 +109,7 @@ public class PartyMode extends Module {
 
         timer++;
 
+        // Get current song length
         int len = switch (songSetting.get()) {
             case Titanium -> titaniumLength;
             case KingVon -> kingVonLength;
@@ -116,12 +119,14 @@ public class PartyMode extends Module {
             case Amore -> amoreLength;
         };
 
+        // When song ends → reset timer and play next
         if (timer >= len) {
             timer = 0;
 
             if (modeSetting.get() == Mode.Playlist) {
                 playlistIndex++;
 
+                // Loop playlist
                 if (playlistIndex >= playlist.length) {
                     playlistIndex = 0;
                 }
@@ -136,6 +141,7 @@ public class PartyMode extends Module {
     private void playSong() {
         if (mc.player == null || mc.world == null) return;
 
+        // Convert enum to sound file ID
         String idPath = switch (songSetting.get()) {
             case Titanium -> "titanium";
             case KingVon -> "king_von";
@@ -147,6 +153,7 @@ public class PartyMode extends Module {
 
         SoundEvent sound = SoundEvent.of(Identifier.of("heteroaddon", idPath));
 
+        // Play the selected song at the player's position
         mc.world.playSound(
             mc.player,
             mc.player.getBlockPos(),
