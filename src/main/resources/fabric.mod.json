@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "heteroaddon",
+  "version": "1.0.0",
+  "name": "Hetero Addon",
+  "description": "Hetero addon.",
+  "authors": [
+    "volvo"
+  ],
+  "contact": {
+    "sources": "discord.gg/x6A3gWUNxs"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "icon": "assets/heteroaddon/icon.png",
+  "entrypoints": {
+    "meteor": [
+      "com.example.addon.AddonTemplate"
+    ]
+  },
+  "mixins": [
+    "heteroaddon.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=1.21.11",
+    "fabricloader": ">=0.14.0",
+    "meteor-client": "*"
+  }
+}
