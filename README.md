@@ -28,7 +28,7 @@ A Meteor Client addon for Minecraft 1.21.11.
 For questions, feature suggestions, discussions, or finding people to play with,
 feel free to join my Discord server:
 
-**discord.gg/X6A3gWUNxs**
+**https://discord.gg/YRm4gm7GhS**
 
 The community mainly speaks Finnish. English is welcome too, but I'm not the best at it.
 
