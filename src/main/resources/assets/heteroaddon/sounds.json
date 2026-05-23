@@ -1,68 +1,48 @@
 {
-  "titanium": {
+  "song1": {
     "sounds": [
-      {
-        "name": "heteroaddon:titanium",
-        "stream": true
-      }
+      { "name": "heteroaddon:song1", "stream": true }
     ]
   },
-  "king_von": {
+  "song2": {
     "sounds": [
-      {
-        "name": "heteroaddon:king_von",
-        "stream": true
-      }
+      { "name": "heteroaddon:song2", "stream": true }
     ]
   },
-  "hot_n_cold": {
+  "song3": {
     "sounds": [
-      {
-        "name": "heteroaddon:hot_n_cold",
-        "stream": true
-      }
+      { "name": "heteroaddon:song3", "stream": true }
     ]
   },
-  "just_dance": {
+  "song4": {
     "sounds": [
-      {
-        "name": "heteroaddon:just_dance",
-        "stream": true
-      }
+      { "name": "heteroaddon:song4", "stream": true }
     ]
   },
-  "alors_on_danse": {
+  "song5": {
     "sounds": [
-      {
-        "name": "heteroaddon:alors_on_danse",
-        "stream": true
-      }
+      { "name": "heteroaddon:song5", "stream": true }
     ]
   },
-  "amore": {
+  "song6": {
     "sounds": [
-      {
-        "name": "heteroaddon:amore",
-        "stream": true
-      }
+      { "name": "heteroaddon:song6", "stream": true }
+    ]
+  },
+  "song7": {
+    "sounds": [
+      { "name": "heteroaddon:song7", "stream": true }
     ]
   },
 
   "bhit1": {
     "sounds": [
-      {
-        "name": "heteroaddon:bhit1",
-        "stream": false
-      }
+      { "name": "heteroaddon:bhit1", "stream": false }
     ]
   },
-
   "phit2": {
     "sounds": [
-      {
-        "name": "heteroaddon:phit2",
-        "stream": false
-      }
+      { "name": "heteroaddon:phit2", "stream": false }
     ]
   }
 }

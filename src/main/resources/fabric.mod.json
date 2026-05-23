@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "heteroaddon",
-  "version": "1.0.0",
+  "version": "1.9",
   "name": "Hetero Addon",
-  "description": "Hetero addon.",
+  "description": "Meteor client addon.",
   "authors": [
     "volv0w"
   ],
   "contact": {
-    "sources": "discord.gg/x6A3gWUNxs"
+    "sources": "https://discord.gg/YRm4gm7GhS"
   },
   "license": "MIT",
   "environment": "*",
