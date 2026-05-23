@@ -1,52 +1,94 @@
 {
-  "titanium": {
+  // ============================================================
+  // HOW TO ADD YOUR OWN MUSIC TRACKS
+  // ============================================================
+  // 1. Place your .ogg files here:
+  //    src/main/resources/assets/heteroaddon/sounds/
+  //
+  // 2. The file name MUST match the sound name below.
+  //    Example:
+  //      "song1": { ... }  ->  song1.ogg
+  //
+  // 3. "stream": true is recommended for long music tracks.
+  //
+  // 4. Make sure the names match PartyMode.java:
+  //      Song1 -> "song1"
+  //      Song2 -> "song2"
+  //      ...
+  //
+  // ============================================================
+  // MUSIC TRACKS (Song1–Song7)
+  // ============================================================
+
+  "song1": {
     "sounds": [
       {
-        "name": "heteroaddon:titanium",
+        "name": "heteroaddon:song1",
         "stream": true
       }
     ]
   },
-  "king_von": {
+
+  "song2": {
     "sounds": [
       {
-        "name": "heteroaddon:king_von",
+        "name": "heteroaddon:song2",
         "stream": true
       }
     ]
   },
-  "hot_n_cold": {
+
+  "song3": {
     "sounds": [
       {
-        "name": "heteroaddon:hot_n_cold",
+        "name": "heteroaddon:song3",
         "stream": true
       }
     ]
   },
-  "just_dance": {
+
+  "song4": {
     "sounds": [
       {
-        "name": "heteroaddon:just_dance",
+        "name": "heteroaddon:song4",
         "stream": true
       }
     ]
   },
-  "alors_on_danse": {
+
+  "song5": {
     "sounds": [
       {
-        "name": "heteroaddon:alors_on_danse",
+        "name": "heteroaddon:song5",
         "stream": true
       }
     ]
   },
-  "amore": {
+
+  "song6": {
     "sounds": [
       {
-        "name": "heteroaddon:amore",
+        "name": "heteroaddon:song6",
         "stream": true
       }
     ]
   },
+
+  "song7": {
+    "sounds": [
+      {
+        "name": "heteroaddon:song7",
+        "stream": true
+      }
+    ]
+  },
+
+  // ============================================================
+  // HIT SOUND EFFECTS (USED BY THE CUSTOM HIT SOUND MODULE)
+  // ============================================================
+  // These are NOT music tracks.
+  // They are short sound effects used by your CustomHitSound module.
+  // "stream": false is recommended for short SFX.
 
   "bhit1": {
     "sounds": [
