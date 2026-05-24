@@ -32,9 +32,6 @@ https://discord.gg/YRm4gm7GhS
 
 The community mainly speaks Finnish. English is welcome too.
 
-## Author
-volv0w
-
 ---
 
 # How to Add Music to PartyMode
