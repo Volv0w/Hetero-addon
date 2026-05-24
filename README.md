@@ -117,7 +117,6 @@ To replace or modify the existing ones:
 
 No copyrighted audio is included in this project.  
 Users must add their own `.ogg` files manually.
----
 
 ## Author
 volv0w
