@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "heteroaddon",
-  "version": "1.9",
+  "version": "2.0",
   "name": "Hetero Addon",
   "description": "Meteor client addon.",
   "authors": [

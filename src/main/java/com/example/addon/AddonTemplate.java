@@ -1,5 +1,6 @@
 package com.example.addon;
 
+import com.example.addon.modules.*;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 
@@ -11,15 +12,6 @@ import org.slf4j.LoggerFactory;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-
-import com.example.addon.modules.Popbob;
-import com.example.addon.modules.PopbobAura;
-import com.example.addon.modules.PartyMode;
-import com.example.addon.modules.CustomHitSound;
-import com.example.addon.modules.Derp;
-import com.example.addon.modules.InvWalk;
-import com.example.addon.modules.Nobackground;
-import com.example.addon.modules.AutoMLG;
 
 public class AddonTemplate extends MeteorAddon {
     public static final Logger LOG = LoggerFactory.getLogger("HeteroAddon");
@@ -40,6 +32,12 @@ public class AddonTemplate extends MeteorAddon {
         Modules.get().add(new InvWalk());
         Modules.get().add(new Nobackground());
         Modules.get().add(new AutoMLG());
+        Modules.get().add(new TriggerBot());
+        Modules.get().add(new PetProtect());
+        Modules.get().add(new UltimateFovChanger());
+        Modules.get().add(new JumpReset());
+
+
     }
 
     @Override

@@ -15,7 +15,7 @@ public class Popbob extends Module {
     private final Random random = new Random();
 
     public Popbob() {
-        super(AddonTemplate.CATEGORY, "popbob", "Spams random items if you have OP.");
+        super(AddonTemplate.CATEGORY, "popbob", "Gives random items if you have OP.");
     }
 
     @EventHandler
@@ -23,7 +23,7 @@ public class Popbob extends Module {
         if (mc.player == null) return;
 
         // Give 100 random items per tick
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50; i++) {
             Item randomItem = Registries.ITEM.get(random.nextInt(Registries.ITEM.size()));
             String id = Registries.ITEM.getId(randomItem).toString();
             mc.player.networkHandler.sendChatCommand("give @s " + id);
