@@ -2,16 +2,24 @@
 
 A Meteor Client addon for Minecraft 1.21.11.
 
-## Features
-- AutoMLG (Makes perfect water bucket mlg)
-- Party Mode (plays music)
-- InvWalk (allows you to walk while inventory is open)
-- NoBackground (removes GUI background)
-- Custom Hit Sound (plays a custom sound when you hit someone)
-- PopBob (gives a random item to you)
-- PopBob Aura (gives random items to everyone)
-- Derp (moves your head everywhere)
-- More coming soon...
+---
+
+## **Features**
+- **AutoMLG** (Makes perfect water bucket MLG)  
+- **Party Mode** (Plays music)  
+- **InvWalk** (Allows you to walk while inventory is open)  
+- **NoBackground** (Removes GUI background)  
+- **Custom Hit Sound** (Plays a custom sound when you hit someone)  
+- **PopBob** (Gives a random item to you)  
+- **PopBob Aura** (Gives random items to everyone)  
+- **Derp** (Moves your head everywhere)  
+- **TriggerBot** (Automatically attacks targets under your crosshair)  
+- **JumpReset** (Reduces knockback by jumping when you get hit)  
+- **PetProtect** (Prevents hitting your pets)  
+- **Ultimate FOV Changer** (Allows you to change FOV over the default limit)  
+- **More coming soon…**
+
+---
 
 ## Installation
 1. Install Meteor Client (required)  
